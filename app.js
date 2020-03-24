@@ -4,7 +4,7 @@ const title = React.createElement(
         'My First React Element!'
     );
 
-const desc = Reac.createElement(
+const desc = React.createElement(
     'p',
     null,
     'I ust learned how to create a React node and render it into the DOM.'

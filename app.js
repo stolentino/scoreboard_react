@@ -1,11 +1,9 @@
-function Header() {
-    return (
+const Header = () => (
         <header>
         <h1>Scorecard</h1>
         <span className="stats">Players: 1</span>
         </header>
-    )
-}
+);
     
 ReactDOM.render(
     <Header />,

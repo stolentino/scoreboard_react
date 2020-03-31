@@ -1,9 +1,12 @@
-const Header = () => (
+const Header = () => {
+    return (
         <header>
-        <h1>Scorecard</h1>
-        <span className="stats">Players: 1</span>
+            <h1>Scorecard</h1>
+            <span className="stats">Players: 1</span>
         </header>
-);
+    );
+}
+      
     
 ReactDOM.render(
     <Header />,

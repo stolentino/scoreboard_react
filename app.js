@@ -1,48 +1,50 @@
 const Header = (props) => {
 	console.log(props);
-    return (
-        <header>
-            <h1>{ props.title }</h1>
-            <span className="stats">Players: { props.totalPlayers }</span>
-        </header>
-    );
-}
-
-const Player = () => {
 	return (
-		<div className="player">
-			<span className="player-name">
-				Sam
-			</span>
-
-			<Counter />
-		</div>
+	  <header>
+		<h1>{ props.title }</h1>
+		<span className="stats">Players: { props.totalPlayers }</span>
+	  </header>
 	);
-}
-
-const Counter = () => {
+  }
+  
+  const Player = () => {
 	return (
-		<div className="counter">
-			<button className="counter-action decrement"> - </button>
-			<span className="counter-score">35</span>
-			<button className="counter-action increment"> + </button>
-		</div>
+	  <div className="player">
+		<span className="player-name">
+		  SAMMY
+		</span>
+  
+		<Counter />
+	  </div>
 	);
-}
-
-const App = () => {
+  }
+  
+  const Counter = () => {
 	return (
-		<div className="scoreboard">
-			<Header title="Scoreboard" totalPlayers={12} />
-			{/* Player list */}
-			<Player />
-		</div>
+	  <div className="counter">
+		<button className="counter-action decrement"> - </button>
+		<span className="counter-score">35</span>
+		<button className="counter-action increment"> + </button>
+	  </div>
 	);
-}
-
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);
-
-
+  }
+  
+  const App = () => {
+	return (
+	  <div className="scoreboard">
+		<Header 
+		  title="Scoreboard" 
+		  totalPlayers={12} 
+		/>
+  
+		{/* Players list */}
+		<Player />
+	  </div>
+	);
+  }
+  
+  ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+  );

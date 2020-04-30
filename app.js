@@ -49,7 +49,7 @@ const Header = (props) => {
 		  score: 0
 		};
 		
-		incrementScore(){
+		incrementScore = () => {
 			this.setState({
 				score: this.state.score + 1
 			});

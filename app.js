@@ -91,7 +91,9 @@ const Header = (props) => {
 			  {this.state.players.map( player =>
 				  <Player 
 					  name={player.name}
+					  id={player.id}
 					  key={player.id.toString()}
+					  removePlayer={this.handleRemovePlayer}
 				  />
 			  )}
 	  
